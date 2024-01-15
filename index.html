@@ -2,8 +2,80 @@
 <html>
 <head>
     <title>Mi Primera Web</title>
+    <style>
+        table, th, td {
+            border: 2px solid rgb(100, 12, 12)
+        }
+    </style>
 </head>
 <body>
+
+    <table style="width: 350px;">
+        <thead>
+            <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chaqueta con bordado</td>
+                <td>$70.000</td>
+            </tr>
+            <tr>
+                <td>Sueter con capucha</td>
+                <td>$80.000</td>
+            </tr>
+            <tr>
+                <td>Gorra con bordado</td>
+                <td>$50.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Total: $200.000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!--ol es lista ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>Sub-elemento 1</li>
+                <li>Sub-elemento 2</li>
+                <li>Sub-elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+    <form action="/formulario" method="GET">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" />
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido" />
+        <br>
+        <label for="comentario">Comentario</label> <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese comentario" name="comentario" ></textarea>
+        <br>
+        <button type="button"><img src="img/boton2.png" width="80"/> </button> <br>
+        <button type="reset"> </button> <br>
+        <button type="submit"> </button> <br>
+    </form>
     <h1>Mi Primer Heading</h1>
     <h2>Mi Segundo Heading</h2>
     <h3>Mi Tercer Heading</h3>
@@ -15,10 +87,13 @@
         Ingresando texto en la <span style="color:blue">seccion de parrafos</span>
         por <br> <br>Gabriel Perez
     </p>
-<!--este texto es un comentario y no va a
-    aparecer en mi web-->
     <hr>
     <h2>Segundo titulo en H2</h2>
-    <p>texto del segundo titulo en H2</p>
+    <p>texto del segundo titulo en H2</p> <br>
+<!--este texto es un comentario y no va a
+    aparecer en mi web-->
+    <a target="_blank" href="https://www.google.com">Ir a google</a> <br>
+
+    <img src="img/coffee.png" width="300"/>
 </body>
 </html>
